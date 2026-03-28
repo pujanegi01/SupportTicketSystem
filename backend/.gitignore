@@ -1,0 +1,33 @@
+# Python build / environment
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+.env
+.env.*
+
+# IDE / editor directories
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# SQLAlchemy / database files
+*.db
+*.sqlite
+
+# Logs
+*.log
+
+# Uvicorn / FastAPI artifacts
+.python-version
+
+# OS files
+.DS_Store
+Thumbs.db
