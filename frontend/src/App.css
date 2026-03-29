@@ -1,38 +1,97 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* .appShell {
   min-height: 100vh;
+  background: linear-gradient(180deg, #eef2ff 0%, #f8fafc 100%);
+}
+
+.appMain {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 24px 18px 40px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #eef2ff;
+  color: #111827;
+}
+
+button,
+input,
+textarea,
+a {
+  font: inherit;
+} */
+
+
+/* src/App.css  — global tokens & layout */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:          #090c12;
+  --bg1:         #0e1420;
+  --bg2:         #131926;
+  --bg3:         #182030;
+  --border:      #1e2a3e;
+  --border2:     #27364f;
+
+  --text:        #e2e8f8;
+  --text2:       #8899b8;
+  --text3:       #4a5a78;
+
+  --accent:      #3b82f6;
+  --accent2:     #2563eb;
+  --accent-glow: rgba(59,130,246,0.12);
+  --accent-ring: rgba(59,130,246,0.25);
+
+  --green:  #10b981;
+  --red:    #ef4444;
+  --yellow: #f59e0b;
+  --purple: #8b5cf6;
+
+  --sidebar: 252px;
+  --r:  10px;
+  --r2: 6px;
+
+  font-family: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  font-size: 15px;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+
+.appShell {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.appMain {
+  flex: 1;
+  margin-left: var(--sidebar);
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse 60% 40% at 70% 0%, rgba(59,130,246,0.04) 0%, transparent 60%),
+    var(--bg);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media (max-width: 768px) {
+  :root { --sidebar: 0px; }
+  .appMain { margin-left: 0; }
 }

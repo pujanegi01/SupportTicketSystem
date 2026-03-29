@@ -1,0 +1,60 @@
+/* src/components/ui/PageBreadcrumb.module.css */
+
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.backBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--r2);
+  font-size: 13px;
+  font-weight: 500;
+  font-family: inherit;
+  color: var(--text2);
+  cursor: pointer;
+  transition: background 0.14s, color 0.14s;
+}
+
+.backBtn:hover:not(:disabled) {
+  background: var(--bg2);
+  color: var(--text);
+}
+
+.backBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.sep {
+  color: var(--text3);
+  font-size: 14px;
+  user-select: none;
+}
+
+.crumbLink {
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text2);
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.13s;
+}
+
+.crumbLink:hover { color: var(--text); }
+
+.crumbCurrent {
+  font-size: 14px;
+  color: var(--text2);
+  font-weight: 500;
+}

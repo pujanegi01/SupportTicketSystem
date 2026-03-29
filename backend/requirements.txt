@@ -1,0 +1,9 @@
+fastapi===0.135.2
+uvicorn===0.42.0
+psycopg2-binary===2.9.11
+sqlalchemy===2.0.48
+python-dotenv===1.2.2
+langchain==1.2.13
+langchain-core===1.2.23
+langchain-community===0.4.1
+langchain-groq

@@ -1,0 +1,25 @@
+/* src/components/ui/CategoryBadge.module.css */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.sm {
+  font-size: 10px;
+  padding: 2px 8px;
+}
+
+/* colour variants */
+.color_red    { background: rgba(239,68,68,.10);  color: #f87171; border: 1px solid rgba(239,68,68,.22); }
+.color_blue   { background: rgba(59,130,246,.10); color: #60a5fa; border: 1px solid rgba(59,130,246,.22); }
+.color_green  { background: rgba(16,185,129,.10); color: #34d399; border: 1px solid rgba(16,185,129,.22); }
+.color_yellow { background: rgba(245,158,11,.10); color: #fbbf24; border: 1px solid rgba(245,158,11,.22); }
+.color_purple { background: rgba(139,92,246,.10); color: #a78bfa; border: 1px solid rgba(139,92,246,.22); }
+.color_gray   { background: rgba(100,116,139,.10);color: #94a3b8; border: 1px solid rgba(100,116,139,.22); }
