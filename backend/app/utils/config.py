@@ -6,6 +6,6 @@ load_dotenv()
 class Settings:
     DATABASE_URL = os.getenv("DATABASE_URL")
     GROK_API_KEY = os.getenv("GROK_API_KEY")
-    SECRET_KEY = os.getenv("SECRET_KEY")
+    # SECRET_KEY = os.getenv("SECRET_KEY")
 
 settings = Settings()
